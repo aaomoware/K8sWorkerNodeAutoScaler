@@ -111,7 +111,7 @@ variable desired_capacity {
 }
 
 variable instance_type {
-  default = "t2.medium"
+  default = "t2.small"
 }
 
 variable map_public_ip_on_launch {
