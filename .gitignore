@@ -7,3 +7,6 @@
 
 # .tfvars files
 *.tfvars
+
+# aws-auth-cm.yaml wll contain the AWS Account ID
+aws-auth-cm.yaml
