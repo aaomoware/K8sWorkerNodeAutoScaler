@@ -28,7 +28,6 @@ cd ../
 Deploy autoscaler
 ```hcl
 kubectl apply -f cluster_autoscaler.yml
-sleep 10;
 ```
 
 Create an nginx pod and service
