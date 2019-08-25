@@ -103,11 +103,11 @@ variable max_size {
 }
 
 variable min_size {
-  default = "2"
+  default = "1"
 }
 
 variable desired_capacity {
-  default = "2"
+  default = "1"
 }
 
 variable instance_type {
