@@ -48,7 +48,7 @@ terraform destroy --force -var cidr_blocks_remote=`curl -s ifconfig.co`/32 -var-
 ```
 
 #### Docs
-https://learn.hashicorp.com/terraform/aws/eks-intro
-https://github.com/kubernetes-incubator/metrics-server
-https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale-walkthrough/
-https://github.com/feiskyer/kubernetes-handbook/blob/master/examples/hpa.yaml
+* https://learn.hashicorp.com/terraform/aws/eks-intro
+* https://github.com/kubernetes-incubator/metrics-server
+* https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale-walkthrough
+* https://github.com/feiskyer/kubernetes-handbook/blob/master/examples/hpa.yaml
