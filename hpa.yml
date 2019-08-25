@@ -4,7 +4,7 @@ metadata:
   name: nginx
   namespace: default
 spec:
-  maxReplicas: 40
+  maxReplicas: 20
   minReplicas: 2
   scaleTargetRef:
     apiVersion: extensions/v1beta1
