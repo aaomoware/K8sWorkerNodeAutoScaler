@@ -41,6 +41,11 @@ Horizontal autoscaling deploymet
 kubectl apply -f hpa.yml
 ```
 
+Stress load website pod to cause pod and worker node to scale
+```hcl
+siege -q -c 150 -t 2m http://node:port
+```
+
 Destroy EKS
 ```hcl
 terraform destroy --force -var cidr_blocks_remote=`curl -s ifconfig.co`/32 -var-file=key/public_key.tf
