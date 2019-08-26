@@ -2,12 +2,12 @@ locals {
   tags {
     "lc" {
       "Name"        = "${var.eks_cluster_name}"
-      "Description" = "Launch Configuration for ${var.eks_cluster_name}  environment"
+      "Description" = "Launch Configuration for ${var.eks_cluster_name}"
     }
 
     "asg" {
       "Name"                                          = "${var.eks_cluster_name}"
-      "Description"                                   = "Auto Scaling Group for ${var.eks_cluster_name}  environment"
+      "Description"                                   = "Auto Scaling Group for ${var.eks_cluster_name}"
       "kubernetes.io/cluster/${var.eks_cluster_name}" = "owned"
     }
 
@@ -30,22 +30,22 @@ locals {
 
     "rt" {
       "Name"        = "${var.eks_cluster_name}"
-      "Description" = "Route Table for  environment"
+      "Description" = "Route Table for ${var.eks_cluster_name}"
     }
 
     "ngw" {
       "Name"        = "${var.eks_cluster_name}"
-      "Description" = "Nat Gateway for ${var.eks_cluster_name}  environment"
+      "Description" = "Nat Gateway for ${var.eks_cluster_name}"
     }
 
     "igw" {
       "Name"        = "${var.eks_cluster_name}"
-      "Description" = "Internet Gateway for ${var.eks_cluster_name}  environment"
+      "Description" = "Internet Gateway for ${var.eks_cluster_name}"
     }
 
     "lc" {
       "Name"        = "${var.eks_cluster_name}"
-      "Description" = "Launch Configuration for ${var.eks_cluster_name}  environment"
+      "Description" = "Launch Configuration for ${var.eks_cluster_name}"
     }
 
     "vpc" {
@@ -55,7 +55,7 @@ locals {
 
     "asg" {
       "Name"                                          = "${var.eks_cluster_name}"
-      "Description"                                   = "Auto Scaling Group for ${var.eks_cluster_name}  environment"
+      "Description"                                   = "Auto Scaling Group for ${var.eks_cluster_name}"
       "kubernetes.io/cluster/${var.eks_cluster_name}" = "owned"
     }
 
@@ -74,8 +74,8 @@ locals {
 
   description {
     "roles" {
-      "mc" = "${var.eks_cluster_name} eks master cluster iam role for  environment"
-      "wn" = "${var.eks_cluster_name} eks worker nodes iam role for  environment"
+      "mc" = "${var.eks_cluster_name} eks master cluster iam role"
+      "wn" = "${var.eks_cluster_name} eks worker nodes iam role"
     }
   }
 

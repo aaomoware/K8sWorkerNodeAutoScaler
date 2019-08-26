@@ -57,3 +57,4 @@ terraform destroy --force -var cidr_blocks_remote=`curl -s ifconfig.co`/32 -var-
 * https://docs.aws.amazon.com/eks/latest/userguide/install-aws-iam-authenticator.html
 * https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale-walkthrough
 * https://github.com/feiskyer/kubernetes-handbook/blob/master/examples/hpa.yaml
+* https://kubernetes.io/docs/tasks/access-application-cluster/create-external-load-balancer/
