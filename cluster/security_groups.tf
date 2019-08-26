@@ -70,6 +70,20 @@ module "sg_worker_node_allow_ssh" {
   security_group_id = "${module.sg_worker_node.id}"
 }
 
+# this rule negates all other internal security rules; this rule was an after thought.
+module "sg_worker_node_allow_all_internally" {
+  source = "git@github.com:aaomoware/terraform-modules.git//aws/vpc/security_group_rule"
+
+  type              = "ingress"
+  to_port           = "0"
+  protocol          = "-1"
+  from_port         = "0"
+  cidr_block        = true
+  description       = "Allow all from within this network"
+  cidr_blocks       = ["${var.vpc_cidr_block}"]
+  security_group_id = "${module.sg_worker_node.id}"
+}
+
 module "sg_worker_node_internal" {
   source = "git@github.com:aaomoware/terraform-modules.git//aws/vpc/security_group_rule"
 
